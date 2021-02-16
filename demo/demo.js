@@ -21,6 +21,7 @@ const viewer = window.OpenSeadragon({
     animationTime: 0,
     springStiffness: 100,
     autoHideControls: false,
+    viewportMargins: {right: 2, bottom: 2},
 })
 
 
