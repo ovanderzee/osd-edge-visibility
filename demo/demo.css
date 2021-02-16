@@ -1,0 +1,36 @@
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font: caption;
+}
+
+body {
+    /* keep canvas away from the window edge */
+    box-sizing: border-box;
+    padding: 1vh 1vw;
+}
+
+#openseadragon {
+    /* keep canvas away from the window edge */
+    width: 98vw;
+    height: 98vh;
+    /* keep canvas in the middle */
+    position: relative;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#openseadragon > * {
+    width: 100%;
+    height: 100%;
+}
+
+.openseadragon-canvas + div {
+    /* keep canvas in the middle */
+    position: fixed !important;
+}
+
