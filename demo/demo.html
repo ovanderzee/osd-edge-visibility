@@ -7,6 +7,17 @@
     </head>
     <body>
         <div id="openseadragon"></div>
+        <form>
+            <label>
+                <input type="number" id="width-ctrl" value="500" min="300" /> px
+            </label>
+            <label>
+                <input type="number" id="height-ctrl" value="500" min="300" /> px
+            </label>
+            <button id="get-ctrl" type="button" title="show current dimensions">Get</button>
+            <button id="set-ctrl" type="button" title="set dimensions to given values">Set</button>
+            <button id="unset-ctrl" type="button" title="set dimensions to fit window">Unset</button>
+        </form>
         <script src="demo.js"></script>
     </body>
 </html>

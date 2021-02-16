@@ -24,3 +24,32 @@ const viewer = window.OpenSeadragon({
 })
 
 
+const osdCanvas = document.getElementById('openseadragon')
+const widthCtrl = document.getElementById('width-ctrl')
+const heightCtrl = document.getElementById('height-ctrl')
+const getCtrl = document.getElementById('get-ctrl')
+const setCtrl = document.getElementById('set-ctrl')
+const unsetCtrl = document.getElementById('unset-ctrl')
+
+widthCtrl.addEventListener('input', function () {
+    osdCanvas.style.width = widthCtrl.value + 'px'
+})
+
+heightCtrl.addEventListener('input', function () {
+    osdCanvas.style.height = heightCtrl.value + 'px'
+})
+
+getCtrl.addEventListener('click', function () {
+    widthCtrl.value = osdCanvas.clientWidth
+    heightCtrl.value = osdCanvas.clientHeight
+})
+
+setCtrl.addEventListener('click', function () {
+    osdCanvas.style.width = widthCtrl.value + 'px'
+    osdCanvas.style.height = heightCtrl.value + 'px'
+})
+
+unsetCtrl.addEventListener('click', function () {
+    osdCanvas.style.width = ''
+    osdCanvas.style.height = ''
+})

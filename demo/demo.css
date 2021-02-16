@@ -34,3 +34,22 @@ body {
     position: fixed !important;
 }
 
+form {
+    position: fixed;
+    right: 0;
+    bottom:0;
+    background: #ccd;
+    color: #334;
+    padding: 2px;
+}
+form > * {
+    display: inline-block;
+}
+form input {
+    width: 4em;
+    padding: 2px 4px;
+}
+form button {
+    width: auto;
+    height: auto;
+}
